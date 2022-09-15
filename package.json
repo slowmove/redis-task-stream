@@ -1,7 +1,7 @@
 {
   "name": "redis-task-stream",
   "version": "0.0.1",
-  "description": "",
+  "description": "Simplest possible implementation to add, get and acknowledge jobs with Redis Streams as backend.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
