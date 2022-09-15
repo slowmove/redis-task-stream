@@ -75,5 +75,9 @@ class RedisTaskStream {
   async ack(id) {
     return await this.redisClient.xAck(this.stream, this.group, id);
   }
+
+  async disconnect() {
+    await this.redisClient.quit();
+  }
 }
 module.exports = RedisTaskStream;
